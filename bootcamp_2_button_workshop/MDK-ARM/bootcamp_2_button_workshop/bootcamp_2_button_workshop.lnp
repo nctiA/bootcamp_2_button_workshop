@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"bootcamp_2_button_workshop\startup_stm32f407xx.o"
+"bootcamp_2_button_workshop\main.o"
+"bootcamp_2_button_workshop\stm32f4xx_it.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_msp.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_tim.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_tim_ex.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_rcc.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_rcc_ex.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_flash.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_flash_ex.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_flash_ramfunc.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_gpio.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_dma_ex.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_dma.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_pwr.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_pwr_ex.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_cortex.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal.o"
+"bootcamp_2_button_workshop\stm32f4xx_hal_exti.o"
+"bootcamp_2_button_workshop\system_stm32f4xx.o"
+--strict --scatter "bootcamp_2_button_workshop\bootcamp_2_button_workshop.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bootcamp_2_button_workshop.map" -o bootcamp_2_button_workshop\bootcamp_2_button_workshop.axf
